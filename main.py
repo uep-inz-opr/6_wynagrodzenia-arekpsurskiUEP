@@ -47,5 +47,5 @@ calkowity_koszt = 0
 for index in range(0,i):
   prac = Pracownik(tablica_pracownikow[index][0],tablica_pracownikow[index][1])
   calkowity_koszt += prac.koszt_pracodawcy()
-  print(tablica_pracownikow[index][0] + " " + str(format(prac.oblicz_netto(),'.2f') + " " + str(prac.skladki_pracodawcy()) + " " + str(prac.koszt_pracodawcy()))
+  print(tablica_pracownikow[index][0] + " " + str(format(prac.oblicz_netto(),'.2f')) + " " + str(prac.skladki_pracodawcy()) + " " + str(prac.koszt_pracodawcy()))
 print("%.2f"%calkowity_koszt)
