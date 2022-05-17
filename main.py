@@ -1,4 +1,4 @@
- class Pracownik:
+class Pracownik:
   def __init__(self, imie, wynagrodzenie):
       self.imie_pracownika = str(imie)
       self.wynagrodzenie_brutto = float(wynagrodzenie)
