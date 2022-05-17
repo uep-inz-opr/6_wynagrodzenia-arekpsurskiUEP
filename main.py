@@ -18,7 +18,7 @@ class Pracownik:
     h = round(a - g - c,0)
     i = round((h*0.18),2) - float(46.33)
     j = round(i - f,0)
-    k = round(a - c - e - j,2)
+    k = format(round(a - c - e - j,2),'.2f'
     return k
     
   def skladki_pracodawcy(self) -> float:
