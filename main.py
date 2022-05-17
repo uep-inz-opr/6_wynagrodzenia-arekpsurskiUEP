@@ -18,7 +18,7 @@ class Pracownik:
     h = round(a - g - c,0)
     i = round((h*0.18),2) - float(46.33)
     j = round(i - f,0)
-    k = format(round(a - c - e - j,2),'.2f'
+    k = round(a - c - e - j,2)
     return k
     
   def skladki_pracodawcy(self) -> float:
@@ -47,5 +47,5 @@ calkowity_koszt = 0
 for index in range(0,i):
   prac = Pracownik(tablica_pracownikow[index][0],tablica_pracownikow[index][1])
   calkowity_koszt += prac.koszt_pracodawcy()
-  print(tablica_pracownikow[index][0] + " " + str(prac.oblicz_netto()) + " " + str(prac.skladki_pracodawcy()) + " " + str(prac.koszt_pracodawcy()))
+  print(tablica_pracownikow[index][0] + " " + str(format(prac.oblicz_netto(),'.2f') + " " + str(prac.skladki_pracodawcy()) + " " + str(prac.koszt_pracodawcy()))
 print("%.2f"%calkowity_koszt)
