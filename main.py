@@ -23,13 +23,13 @@ class Pracownik:
     
   def skladki_pracodawcy(self) -> float:
     podstawa_wymiaru_skladek = self.wynagrodzenie_brutto
-    skladki_obciazajace_pracodawce = round(podstawa_wymiaru_skladek*0.0976,2) + round(podstawa_wymiaru_skladek*0.065,2) + round(podstawa_wymiaru_skladek*0.0193,2) + round(podstawa_wymiaru_skladek*0.0245,2) + round(podstawa_wymiaru_skladek*0.001,2)
+    skladki_obciazajace_pracodawce = round(round(podstawa_wymiaru_skladek*0.0976,2) + round(podstawa_wymiaru_skladek*0.065,2) + round(podstawa_wymiaru_skladek*0.0193,2) + round(podstawa_wymiaru_skladek*0.0245,2) + round(podstawa_wymiaru_skladek*0.001,2),2)
     return skladki_obciazajace_pracodawce
 
   def koszt_pracodawcy(self) -> float:
     podstawa_wymiaru_skladek = self.wynagrodzenie_brutto
-    skladki_obciazajace_pracodawce = round(podstawa_wymiaru_skladek*0.0976,2) + round(podstawa_wymiaru_skladek*0.065,2) + round(podstawa_wymiaru_skladek*0.0193,2) + round(podstawa_wymiaru_skladek*0.0245,2) + round(podstawa_wymiaru_skladek*0.001,2)
-    koszt_pracodawcy = round(podstawa_wymiaru_skladek,2) + round(skladki_obciazajace_pracodawce,2)
+    skladki_obciazajace_pracodawce = round(round(podstawa_wymiaru_skladek*0.0976,2) + round(podstawa_wymiaru_skladek*0.065,2) + round(podstawa_wymiaru_skladek*0.0193,2) + round(podstawa_wymiaru_skladek*0.0245,2) + round(podstawa_wymiaru_skladek*0.001,2),2)
+    koszt_pracodawcy = round(round(podstawa_wymiaru_skladek,2) + round(skladki_obciazajace_pracodawce,2),2)
     return koszt_pracodawcy
 
 #input na liczbę pracowników
