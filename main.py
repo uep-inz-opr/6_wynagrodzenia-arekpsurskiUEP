@@ -1,4 +1,4 @@
- class Pracownik:
+class Pracownik:
   def __init__(self, imie, wynagrodzenie):
       self.imie_pracownika = str(imie)
       self.wynagrodzenie_brutto = float(wynagrodzenie)
@@ -32,9 +32,7 @@
     koszt_pracodawcy = round(podstawa_wymiaru_skladek,2) + round(skladki_obciazajace_pracodawce,2)
     return koszt_pracodawcy
 
-#input na liczbę pracowników
-i = int(input())
-tablica_pracownikow = []
+
 
 for index in range(0,i):
   dane_pracownika=input().replace('\r', '').replace('\n', '').split(" ")
